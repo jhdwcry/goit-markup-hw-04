@@ -17,14 +17,15 @@
     />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
-    <div class="nav-container">
-      <nav>
-        <a class="logo" href="./index.html"
+      <nav class="nav">
+        <div class="logo-container">
+          <a class="logo" href="./index.html"
           >Web<span class="logo-span">Studio</span></a
         >
-        <ul>
+        </div>
+        <ul class="nav-menu">
           <li class="nav-list">
             <a class="nav-link" href="./index.html">Studio</a>
           </li>
@@ -38,7 +39,7 @@
       </nav>
 
       <address class="nav-address">
-        <ul>
+        <ul class="address-list">
           <li>
             <a class="address-link" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
@@ -51,47 +52,45 @@
           </li>
         </ul>
       </address>
-    </div>
       </div>
     </header>
 
     <main>
       <section class="hero-section">
         <div class="container">
+          <h1 class="hero-title">Effective Solutions for Your Business</h1>
           <div class="hero-container">
-            <h1 class="hero-title">Effective Solutions for Your Business</h1>
             <button class="hero-section-button" type="button">Order Service</button>
           </div>
         </div>
       </section>
 
       <section class="section about-section">
+        <h2 class="section-title visually-hidden" hidden>About</h2>
         <div class="container">
-          <h2 class="section-title" hidden>About</h2>
-          <div class="about-list">
-            <ul>
-              <li>
+            <ul class="about-card">
+              <li class="about-list">
                 <h3 class="section-subtitle">Strategy</h3>
                 <p class="description">
                   Our goal is to identify the business problem to walk away with the
                   perfect and creative solution.
                 </p>
               </li>
-              <li>
+              <li class="about-list">
                 <h3 class="section-subtitle">Punctuality</h3>
                 <p class="description">
                   Bring the key message to the brand's audience for the best price
                   within the shortest possible time.
                 </p>
               </li>
-              <li>
+              <li class="about-list">
                 <h3 class="section-subtitle">Diligence</h3>
                 <p class="description">
                   Research and confirm brands that present the strongest digital
                   growth opportunities and minimize risk.
                 </p>
               </li>
-              <li>
+              <li class="about-list">
                 <h3 class="section-subtitle">Technologies</h3>
                 <p class="description">
                   Design practice focused on digital experiences. We bring forth a
@@ -99,15 +98,13 @@
                 </p>
               </li>
             </ul>
-          </div>
         </div>
       </section>
 
       <section class="section team-section">
+        <h2 class="section-title">Our Team</h2>
         <div class="container">
-          <h2 class="section-title">Our Team</h2>
-
-        <ul>
+        <ul class="team-list">
           <li class="team-card">
             <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" />
             <div class="card-content">
@@ -141,18 +138,17 @@
       </section>
 
       <section class="section portfolio-section">
+        <h2 class="section-title">Our Portfolio</h2>
         <div class="container">
-          <h2 class="section-title">Our Portfolio</h2>
-        <div class="project-list">
-          <ul>
-            <li>
+          <ul class="portfolio-list">
+            <li class="project-list">
               <img src="./images/banking_app.jpg" alt="Banking App" width="360" />
               <div class="project-card">
                 <h3 class="section-subtitle">Banking App</h3>
                 <p class="description">App</p>
               </div>
             </li>
-            <li>
+            <li class="project-list">
               <img
                 src="./images/cashless_payment.jpg"
                 alt="Cashless Payment"
@@ -163,7 +159,7 @@
                 <p class="description">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="project-list">
               <img
                 src="./images/meditation_app.jpg"
                 alt="Meditation App"
@@ -174,7 +170,7 @@
                 <p class="description">App</p>
               </div>
             </li>
-            <li>
+            <li class="project-list">
               <img
                 src="./images/taxi_service.jpg"
                 alt="Taxi Service"
@@ -185,7 +181,7 @@
               <p class="description">Marketing</p>
               </div>
             </li>
-            <li>
+            <li class="project-list">
               <img
                 src="./images/screen_illustrations.jpg"
                 alt="Screen Illustrations"
@@ -196,7 +192,7 @@
                 <p class="description">Design</p>
               </div>
             </li>
-            <li>
+            <li class="project-list">
               <img
                 src="./images/online_courses.jpg"
                 alt="Online Courses"
@@ -208,7 +204,6 @@
               </div>
             </li>
           </ul>
-        </div>
         </div>
       </section>
     </main>
