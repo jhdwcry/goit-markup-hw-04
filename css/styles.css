@@ -25,6 +25,7 @@ img{
 
 .header{
   border-bottom: 1px solid #e7e9fc;
+  display: flex;
 }
 
 .logo {
@@ -47,6 +48,8 @@ ul {
   list-style: none;
   display: flex;
   gap: 24px;
+  margin: 0;
+  padding: 0;
 }
 
 nav a {
@@ -62,6 +65,11 @@ nav ul{
 .nav{
   display: flex;
   align-items: center;
+}
+
+header .container{
+  display: flex;
+  justify-content: space-between;
 }
 
 .nav-link{
@@ -265,7 +273,6 @@ h3 {
 .container {
   width: 1158px;
   margin: auto;
-  display: flex;
   padding: 0 15px
 }
 .about-card{
