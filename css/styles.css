@@ -183,7 +183,9 @@ h3 {
 .team-section .description{
   text-align: center;
 }
-
+.team-section h3{
+  text-align: center;
+}
 .team-card {
   background-color: #ffffff;
   display: flex;
