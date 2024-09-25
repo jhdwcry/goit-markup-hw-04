@@ -83,7 +83,7 @@ header .container {
 
 
 
-.nav-link:active:after{
+.nav-link:after{
   content: "";
   width: 100%;
   position: absolute;
@@ -131,15 +131,13 @@ address {
 
 .address-link:hover {
   color: #404bbf;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-link:focus {
   color: #404bbf;
 }
 
-.adress-content{
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 .hero-title {
   color: #ffffff;
   font-size: 56px;
@@ -250,11 +248,11 @@ h3 {
   min-width: 169px;
   height: 56px;
   margin: 0 auto;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .hero-section-button:hover {
   background-color: #404bbf;
-  transition:  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .hero-section-button:focus {
@@ -359,8 +357,14 @@ h3 {
   height: 100%;
   width: 100%;
   transform: translateY(100%);
+  padding: 40px 32px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.overlay-text:hover{
+  transform: translateY(0%);
+}
+
 .project-list:hover{
   box-shadow:  0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transform: translateY(0%);
@@ -421,10 +425,11 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-link:hover{
-  background-color: #404bbf;
+   background-color: #404bbf;
 }
 
 .social-link:focus{
@@ -444,6 +449,10 @@ h3 {
   margin-right: 120px;
 }
 
+.footer .socials-list{
+  gap: 16px;
+}
+
 .socials-text{
   font-weight: 500;
   font-size: 16px;
@@ -451,4 +460,20 @@ h3 {
   letter-spacing: 0.02em;
   color: #FFFFFF;
   margin-bottom: 16px;
+}
+
+.socials-text:hover{
+  transform: translateY(0%);
+}
+
+.footer .social-link:hover{
+  background-color: #31d0aa;
+}
+
+.footer .social-link:focus{
+  background-color: #31d0aa;
+}
+
+.team-socials-svg{
+  fill: #f4f4fd;
 }
